@@ -1,0 +1,9 @@
+body{
+    background-color: #00111c;
+}
+
+h1{font-size: larger; color: aliceblue; }
+h2{font-size: larger; color: aliceblue; }
+h3{font-size: medium; color: aliceblue;}
+p{font-size: small; color: aqua;}
+label{font-size: small; color: aqua;}
