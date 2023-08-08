@@ -1,9 +1,13 @@
-body{
-    background-color: #00111c;
+.container{
+    background-color: white;
 }
 
-h1{font-size: larger; color: aliceblue; }
-h2{font-size: larger; color: aliceblue; }
-h3{font-size: medium; color: aliceblue;}
-p{font-size: small; color: aqua;}
-label{font-size: small; color: aqua;}
+h1{font-size: larger; color: rgb(14, 17, 19); }
+h2{font-size: larger; color: rgb(14, 17, 19); }
+h3{font-size: medium; color: rgb(14, 17, 19);}
+p{font-size: small; color: rgb(14, 17, 19);}
+label{font-size: small; color: rgb(14, 17, 19);}
+
+.footer {
+    text-align: center;
+}
