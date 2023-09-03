@@ -1,16 +1,25 @@
 @charset "UTF-8";
 .win-suscribe-button {
   border-radius: 8px;
+  background-color: black;
   border-color: rgb(52, 3, 129);
-  color: rgb(250, 250, 250);
-  width: 200px;
+  color: rgb(223, 131, 11);
+  width: 300px;
+  height: 80px;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+}
+.win-suscribe-button:hover {
+  background-color: rgb(38, 2, 95);
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
 }
 .win-suscribe-button a {
-  color: aliceblue;
+  color: rgb(38, 117, 185);
 }
 
 .contact-inpùt {
-  border-radius: 8px;
+  border-radius: 24px;
   background-color: grey;
   color: aliceblue;
 }
@@ -23,15 +32,48 @@
 
 .contact-img {
   width: 450px;
+  height: 300px;
 }
 
-.container {
-  background-color: white;
+body {
+  background-image: url("..//../assets/background.jpg");
+  background-size: cover;
+  background: -webkit-linear-gradient(white, black, 40);
+}
+
+.home-intro {
+  font-weight: 500;
+  font-size: medium;
+  color: white;
+}
+.home-intro :hover {
+  font-size: small;
+  transition-duration: 1s;
+  color: aqua;
+}
+
+.container-nav-options {
+  font-size: medium;
+}
+.container-nav-options :hover {
+  background-color: black;
+  transition-duration: 2ms;
+}
+
+.container-home {
+  background-color: black;
+  opacity: 0.8;
+  margin-left: 16px;
+  margin-right: 24px;
+  padding-left: 24px;
+}
+.container-home :hover {
+  opacity: 1;
 }
 
 h1 {
   font-size: larger;
-  color: rgb(14, 17, 19);
+  color: rgb(248, 249, 250);
 }
 
 h2 {
@@ -45,8 +87,8 @@ h3 {
 }
 
 p {
-  font-size: small;
-  color: rgb(14, 17, 19);
+  font-size: medium;
+  color: rgb(214, 215, 216);
 }
 
 label {
@@ -58,47 +100,128 @@ label {
   width: 200px;
 }
 
+.nav-options {
+  color: white;
+  font-weight: 500;
+}
+
 .seasons-title {
-  color: rgb(68, 11, 122);
+  color: rgb(191, 189, 192);
   font-weight: 600;
   margin-top: 16px;
 }
 
 .seasons-main-title {
-  color: rgb(68, 11, 122);
+  color: rgb(194, 190, 197);
+  -webkit-animation: flash linear;
+  animation: flash linear 1s;
+}
+
+.seasons-show-info {
+  padding: 5px 5px 5px 5px;
+}
+.seasons-show-info :hover {
+  background-color: black;
+  font-weight: 600;
+  -webkit-animation: flash linear 1s;
+  animation: flash linear 1s;
+  background-image: url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat;
+  filter: grayscale(60%);
 }
 
 .about-main-title {
-  color: rgb(68, 11, 122);
+  color: rgb(252, 248, 255);
 }
 
 .contact-main-title {
-  color: rgb(68, 11, 122);
+  color: rgb(245, 238, 252);
+  -webkit-animation: flash linear 1s;
+  animation: flash linear 1s;
 }
 
 .main-actors-main-title {
-  color: rgb(68, 11, 122);
+  color: rgb(222, 221, 223);
+  -webkit-animation: flash linear 1s;
+  animation: flash linear 1s;
 }
 
 .main-actors-titles {
-  color: rgb(68, 11, 122);
+  color: rgb(211, 208, 214);
 }
 
 .watch-main-title {
-  color: rgb(68, 11, 122);
+  color: rgb(218, 216, 219);
 }
 
-.watch-main-title {
-  color: rgb(68, 11, 122);
+.watch-title {
+  color: rgb(233, 233, 233);
 }
 
+.footer-copyright {
+  color: white;
+  -webkit-animation: flash linear;
+  animation: flash linear 1s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main-actors-text {
   font: size 16px;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .main-actors-img {
-  border-radius: 16px;
+  border-radius: 48px;
   border: 2px;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.main-actors-img :hover {
+  width: 150px;
+  height: 150px;
+}
+
+.main-actors-container {
+  background-color: black;
+  opacity: 0.5;
+  margin-left: 24px;
+  border: 2px;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+
+.main-actors-container:hover {
+  opacity: 1;
+  background-color: rgb(13, 1, 32);
+  margin-left: 8px;
+  border: 2px;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

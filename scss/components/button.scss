@@ -1,11 +1,20 @@
 .win-suscribe-button {
     border-radius: 8px;
+    background-color: black ;
     border-color: rgb(52, 3, 129);
-    color: rgb(250, 250, 250);
-    width: 200px;
+    color: rgb(223, 131, 11);
+    width: 300px;
+    height: 80px;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    &:hover{
+        background-color:rgb(38, 2, 95);
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+    }
 
     a {
-        color: aliceblue;
+        color: rgb(38, 117, 185);
       }
       
   }
